@@ -34,7 +34,10 @@ const Container = styled.div`
         color: #FFFFFF;
         font-size: 1.4rem;
         cursor: pointer;
-        hover: #F23A29;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: #F23A29;
+        }
     }
 `;
 
