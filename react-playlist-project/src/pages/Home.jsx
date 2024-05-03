@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
+import Intro from '../components/Intro';
 import Body from '../components/Body';
 import Footer from '../components/Footer';
 
@@ -15,7 +16,7 @@ function Home() {
             <div className="body">
                     <Navbar />
                     <div className="bodyContents">
-                        <Body />
+                        <Intro />
                     </div>
             </div>
       </div>
@@ -46,6 +47,13 @@ const Container = styled.div`
         height: 100%;
         width: 100%;
         overflow: auto;
+    }
+    .bodyContents{
+        text-align: center;
+        align-item: center;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
     }
 
 `;
