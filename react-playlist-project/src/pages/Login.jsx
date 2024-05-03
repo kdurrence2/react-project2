@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import Home from './Home.jsx';
 import RhythmicLarge from '../assets/Rhythmic-large.png';
 import styled from 'styled-components';
 
