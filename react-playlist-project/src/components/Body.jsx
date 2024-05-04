@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import {AiFillClockCircle} from 'react-icons/ai';
 import PlaylistIcon from '../assets/studyplaylist.jpg'
 import CosmicWanderers from "../assets/cosmicwanderers.jpg"
+import MoonlitSerenade from "../assets/moonlitserenade.jpg"
+import BlueNoise from "../assets/bluenoise.jpg"
+import ShootingStar from "../assets/shootingstar.jpg"
+import SleepDeep from "../assets/sleep.jpg"
 
 function Body() {
 
@@ -21,7 +25,7 @@ function Body() {
             </div>
             <div className="list">
                 <div className="headerRow">
-                <div className="col">
+                    <div className="col">
                         <span>#</span>
                     </div>
                     <div className="col">
@@ -44,16 +48,126 @@ function Body() {
                         <div className="image">
                             <img src={CosmicWanderers} alt="song image"></img>
                         </div>
-                    </div>
-                    <div className="info">
-                        <span className="name">Neon Dreams</span>
-                        <span>The Cosmic Wanderers</span>
+                        <div className="info">
+                            <span className="name">Neon Dreams</span>
+                            <span>The Cosmic Wanderers</span>
+                        </div>
                     </div>
                     <div className="col">
-                        <span>Album</span>
+                        <span>Drifting</span>
                     </div>
                     <div className="col">
                         <span>2:34</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>2</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={MoonlitSerenade} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Moonlit Serenade</span>
+                            <span>Electric Echoes</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Echoing</span>
+                    </div>
+                    <div className="col">
+                        <span>3:21</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>3</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={BlueNoise} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Whispers in the Wind</span>
+                            <span>Sapphire Symphony</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Blue Noise</span>
+                    </div>
+                    <div className="col">
+                        <span>4:14</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>4</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={ShootingStar} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Midnight Mirage</span>
+                            <span>Starlight Strangers</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Stargazing</span>
+                    </div>
+                    <div className="col">
+                        <span>3:52</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>5</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={SleepDeep} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Siren's Songe</span>
+                            <span>Celestial Sirens</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Sleep Deep</span>
+                    </div>
+                    <div className="col">
+                        <span>2:44</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>5</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={CosmicWanderers} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Galactic Groove</span>
+                            <span>The Cosmic Wanderers</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Drifting</span>
+                    </div>
+                    <div className="col">
+                        <span>3:24</span>
                     </div>
                 </div>
             </div>
@@ -95,12 +209,13 @@ const Container = styled.div`
             top: 15vh;
             padding: 1rem 3rem;
             transition: 0.3s ease-in-out;
+        }
     }
     .tracks {
         margin: 0 2rem;
         display: flex;
         flex-direction: column;
-        margin-bottom: 5rem;
+        margin-bottom: 0.1rem;
         .row {
             padding: 0.5rem 1rem;
             display: grid;
