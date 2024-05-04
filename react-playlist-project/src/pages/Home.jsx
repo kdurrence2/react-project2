@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
-import Body from '../components/Body';
 import Footer from '../components/Footer';
 
 

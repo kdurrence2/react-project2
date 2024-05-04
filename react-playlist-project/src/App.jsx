@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import AppRouter from './components/AppRouter'
-import Home from './pages/Home'
+import Playlist from './pages/Playlist'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
       <div>
          {/* <AppRouter /> */}
-        <Home />
+        <Playlist />
       </div>
 
     </>

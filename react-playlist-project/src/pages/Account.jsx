@@ -5,7 +5,7 @@ function Account() {
 
   return (
     <>
-      <h1>My Account Page with List of Playlists!</h1>
+      <h1>My Account Page with Profile Information!</h1>
     </>
   )
 }
