@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
+import Intro from '../components/Intro';
+import Footer from '../components/Footer';
 
 const Container = styled.div`
     max-width: 100vw;
@@ -15,12 +19,14 @@ const HomeBody = styled.div`
     height: 100%;
     width: 100%;
     background-color: #590202;
+    color: #000000;
 `;
 
 const Body = styled.div`
     height: 100%;
     width: 100%;
     overflow: auto;
+    color: #000000;
 `;
 
 const BodyContents = styled.div`
@@ -28,6 +34,7 @@ const BodyContents = styled.div`
     align-items: center;
     margin-top: 6rem;
     margin-bottom: 6rem;
+    color: #000000;
 `;
 
 function ProfilePage() {
