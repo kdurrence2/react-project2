@@ -27,7 +27,7 @@ const Container = styled.div`
         align-items: center;
         gap: 1rem;
         &__image{
-            height: 0.5rem;
+            height: 4,5rem;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
             img {
                 height: 4.5rem;
