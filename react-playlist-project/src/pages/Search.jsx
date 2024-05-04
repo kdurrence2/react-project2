@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import Body from '../components/Body';
+import SearchBody from '../components/SearchBody';
 import Footer from '../components/Footer';
 
 
@@ -15,7 +15,7 @@ function Search() {
             <div className="body">
                     <Navbar />
                     <div className="bodyContents">
-                        <Body />
+                        <SearchBody />
                     </div>
             </div>
       </div>
