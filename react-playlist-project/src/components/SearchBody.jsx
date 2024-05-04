@@ -7,6 +7,11 @@ import MoonlitSerenade from "../assets/moonlitserenade.jpg"
 import BlueNoise from "../assets/bluenoise.jpg"
 import ShootingStar from "../assets/shootingstar.jpg"
 import SleepDeep from "../assets/sleep.jpg"
+import Sunset from "../assets/sunset.jpg"
+import Lonely from "../assets/lonely.jpg"
+import Cloud from "../assets/cloud.jpg"
+import Galaxy from "../assets/galaxy.jpg"
+import Sparkle from "../assets/sparkle.jpg"
 
 function SearchBody() {
 
@@ -14,13 +19,10 @@ function SearchBody() {
     <Container>
         <div>
             <div className="playlist">
-                <div className="image">
-                    <img src={PlaylistIcon} alt="A playlist icon depicting a laptop and desk"></img>
-                </div>
                 <div className="details">
-                    <span className="type">PLAYLIST</span>
-                    <h1 className="title">Study Jams</h1>
-                    <p className="description">For when you need to focus</p>
+                    <span className="type">EXPLORE</span>
+                    <h1 className="title">Looking for Something New?</h1>
+                    <p className="description">Recommended Songs</p>
                 </div>
             </div>
             <div className="list">
@@ -46,18 +48,18 @@ function SearchBody() {
                     </div>
                     <div className="col detail">
                         <div className="image">
-                            <img src={CosmicWanderers} alt="song image"></img>
+                            <img src={Sparkle} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Neon Dreams</span>
-                            <span>The Cosmic Wanderers</span>
+                            <span className="name">Spectral Symphony</span>
+                            <span>Mirage Melodies</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Drifting</span>
+                        <span>mUsic</span>
                     </div>
                     <div className="col">
-                        <span>2:34</span>
+                        <span>3:35</span>
                     </div>
                 </div>
             </div>
@@ -68,18 +70,18 @@ function SearchBody() {
                     </div>
                     <div className="col detail">
                         <div className="image">
-                            <img src={MoonlitSerenade} alt="song image"></img>
+                            <img src={Galaxy} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Moonlit Serenade</span>
-                            <span>Electric Echoes</span>
+                            <span className="name">Stardust Sonata</span>
+                            <span>Galaxy Cadence</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Echoing</span>
+                        <span>Starburst</span>
                     </div>
                     <div className="col">
-                        <span>3:21</span>
+                        <span>4:17</span>
                     </div>
                 </div>
             </div>
@@ -90,18 +92,18 @@ function SearchBody() {
                     </div>
                     <div className="col detail">
                         <div className="image">
-                            <img src={BlueNoise} alt="song image"></img>
+                            <img src={Lonely} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Whispers in the Wind</span>
-                            <span>Sapphire Symphony</span>
+                            <span className="name">Echoes of Eternity</span>
+                            <span>Celestial Harmony</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Blue Noise</span>
+                        <span>Celestial Harmony</span>
                     </div>
                     <div className="col">
-                        <span>4:14</span>
+                        <span>3:14</span>
                     </div>
                 </div>
             </div>
@@ -115,12 +117,12 @@ function SearchBody() {
                             <img src={ShootingStar} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Midnight Mirage</span>
-                            <span>Starlight Strangers</span>
+                            <span className="name">Whirlwind Waltz</span>
+                            <span>Nebula Notes</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Stargazing</span>
+                        <span>The Galaxy Awaits</span>
                     </div>
                     <div className="col">
                         <span>3:52</span>
@@ -134,40 +136,62 @@ function SearchBody() {
                     </div>
                     <div className="col detail">
                         <div className="image">
-                            <img src={SleepDeep} alt="song image"></img>
+                            <img src={Cloud} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Siren's Songe</span>
-                            <span>Celestial Sirens</span>
+                            <span className="name">Frostbite Fugue</span>
+                            <span>Arctic Allegro</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Sleep Deep</span>
+                        <span>C-Old Soul</span>
                     </div>
                     <div className="col">
-                        <span>2:44</span>
+                        <span>4:44</span>
                     </div>
                 </div>
             </div>
             <div className="tracks">
                 <div className="row">
                     <div className="col">
-                        <span>5</span>
+                        <span>6</span>
                     </div>
                     <div className="col detail">
                         <div className="image">
-                            <img src={CosmicWanderers} alt="song image"></img>
+                            <img src={BlueNoise} alt="song image"></img>
                         </div>
                         <div className="info">
-                            <span className="name">Galactic Groove</span>
-                            <span>The Cosmic Wanderers</span>
+                            <span className="name">Aurora Dreamscape</span>
+                            <span>Echoing Cosmos</span>
                         </div>
                     </div>
                     <div className="col">
-                        <span>Drifting</span>
+                        <span>Dream Pilot</span>
                     </div>
                     <div className="col">
                         <span>3:24</span>
+                    </div>
+                </div>
+            </div>
+            <div className="tracks">
+                <div className="row">
+                    <div className="col">
+                        <span>7</span>
+                    </div>
+                    <div className="col detail">
+                        <div className="image">
+                            <img src={Sunset} alt="song image"></img>
+                        </div>
+                        <div className="info">
+                            <span className="name">Solar Serenade</span>
+                            <span>Nova Melodies</span>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <span>Debut</span>
+                    </div>
+                    <div className="col">
+                        <span>2:43</span>
                     </div>
                 </div>
             </div>

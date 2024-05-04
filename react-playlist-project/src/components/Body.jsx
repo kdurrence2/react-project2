@@ -152,7 +152,7 @@ function Body() {
             <div className="tracks">
                 <div className="row">
                     <div className="col">
-                        <span>5</span>
+                        <span>6</span>
                     </div>
                     <div className="col detail">
                         <div className="image">
