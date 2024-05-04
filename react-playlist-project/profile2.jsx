@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Container = styled.div`
     max-width: 100vw;
@@ -32,29 +30,6 @@ const BodyContents = styled.div`
     margin-bottom: 6rem;
 `;
 
-const FavoriteGenres = styled.div`
-    display: flex;
-    align-items: center;
-
-    .genre {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 2rem;
-
-        .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: #fff;
-        }
-
-        .title {
-            color: #fff;
-            font-size: 0.8rem;
-        }
-    }
-`;
-
 function ProfilePage() {
   const user = {
     name: 'John Doe',
@@ -76,14 +51,11 @@ function ProfilePage() {
             </div>
             <div>
               <h3>Favorite Genres</h3>
-              <FavoriteGenres>
+              <ul>
                 {user.favoriteGenres.map((genre, index) => (
-                  <div className="genre" key={index}>
-                    <FontAwesomeIcon icon={faCircle} className="icon" />
-                    <p className="title">{genre}</p>
-                  </div>
+                  <li key={index}>{genre}</li>
                 ))}
-              </FavoriteGenres>
+              </ul>
             </div>
             <div>
               <h3>Favorite Artists</h3>
