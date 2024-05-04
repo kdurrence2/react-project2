@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
+import Intro from '../components/Intro';
+import Footer from '../components/Footer';
 
 const Container = styled.div`
     max-width: 100vw;
@@ -7,28 +11,30 @@ const Container = styled.div`
     overflow: hidden;
     display: grid;
     grid-template-rows: 85vh 15vh;
+`;
 
-    .homeBody {
-        display: grid;
-        grid-template-columns: 15vw 85vw;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(transparent, rgba(0,0,0,1));
-        background-color: #590202;
-    }
+const HomeBody = styled.div`
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    height: 100%;
+    width: 100%;
+    background-color: #590202;
+    color: #000000;
+`;
 
-    .body {
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-    }
+const Body = styled.div`
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    color: #000000;
+`;
 
-    .bodyContents {
-        text-align: center;
-        align-items: center;
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-    }
+const BodyContents = styled.div`
+    text-align: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    color: #000000;
 `;
 
 function ProfilePage() {
@@ -42,9 +48,9 @@ function ProfilePage() {
 
   return (
     <Container>
-      <div className="homeBody">
-        <div className="body">
-          <div className="bodyContents">
+      <HomeBody>
+        <Body>
+          <BodyContents>
             <h1>Profile</h1>
             <div>
               <h2>{user.name}</h2>
@@ -74,9 +80,9 @@ function ProfilePage() {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
+          </BodyContents>
+        </Body>
+      </HomeBody>
     </Container>
   );
 }
