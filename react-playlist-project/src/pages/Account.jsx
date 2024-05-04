@@ -1,34 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const Container = styled.div`
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 85vh 15vh;
-
-    .homeBody {
-        display: grid;
-        grid-template-columns: 15vw 85vw;
-        height: 100%;
-        width: 100%;
-        background-color: #590202;
-    }
-
-    .body {
-        height: 100%;
-        width: 100%;
-        overflow: auto;
-    }
-
-    .bodyContents {
-        text-align: center;
-        align-items: center;
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-    }
-`;
+import RhythmicSmall from "../assets/Rhythmic-small.png"
 
 function ProfilePage() {
   const user = {
@@ -41,9 +13,10 @@ function ProfilePage() {
 
   return (
     <Container>
-      <div className="homeBody">
-        <div className="body">
-          <div className="bodyContents">
+      <div className='HomeBody'>
+        <div className='Body'>
+          <img src={RhythmicSmall} alt="Logo"></img>
+          <div className='BodyContents'>
             <h1>Profile</h1>
             <div>
               <h2>{user.name}</h2>
@@ -79,5 +52,51 @@ function ProfilePage() {
     </Container>
   );
 }
+
+const Container = styled.div`
+  .HomeBody{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  .Body {
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    img{
+      margin-left: 43vw;
+      margin-top: 10vh;
+    }
+  }
+  .BodyContents{
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    color: #000000;
+    padding: 1rem;
+    h1{
+      padding: 0.7rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2{
+      padding: 0.6rem;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+    h3{
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    li {
+      padding: 0.3rem;
+      list-style: none;
+
+    }
+  }
+`;
 
 export default ProfilePage;
